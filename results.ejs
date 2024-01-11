@@ -1,0 +1,23 @@
+<!-- results.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <ul>
+        <% for (const result of results) { %>
+            <li>
+                <!-- Display each field in the result -->
+                Customer ID: <%= result.c_id %><br>
+                Name: <%= result.c_name %><br>
+                <!-- Add more fields as needed -->
+            </li>
+        <% } %>
+    </ul>
+</body>
+</html>

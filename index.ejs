@@ -1,0 +1,32 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <!-- Include your CSS styles here if needed -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>Search Page</h1>
+
+        <form action="/search" method="post">
+            <div class="search-bar">
+                <select name="category" class="dropdown">
+                    <option value="category1">Category 1</option>
+                    <option value="category2">Category 2</option>
+                    <option value="category3">Category 3</option>
+                </select>
+                <input type="text" name="searchTerm" class="search-input" placeholder="Search by keyword">
+                <button type="submit" class="search-btn">Search</button>
+            </div>
+        </form>
+
+        <!-- Add other search bars as needed -->
+
+    </div>
+
+</body>
+</html>
